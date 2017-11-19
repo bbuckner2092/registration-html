@@ -24,10 +24,11 @@
         <input name="Gender" value="Other" id="Other" type="radio">
         <br>
         <!-- Email: Username and Password  -->
+        <!-- For password length, use: Pattern and required title -->
         <label for="Username">Email:</label>
         <input type="email" id="Username" placeholder="your email" required="">
         <label for="Password">Password:</label>
-        <input type="password" id="Password" placeholder="your password" minlength="5" maxlength="10" required="">
+        <input type="password" id="Password" placeholder="your password" pattern=".{5,12}" required title="5 to 10 characters">
         <br>
         <!-- Birthday: Month, Day, Year -->
         <label for="Birthday">Birthday:</label>
