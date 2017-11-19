@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Registration Form</title>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
 </head>
+
 <body>
-	<h1>Register</h1>
-	<form action="">
-		<!-- First and Last Name -->
-		<label for="First Name">First Name:</label>
-		<input placeholder="John" type="text" required="">
-		<label for="Last Name">Last Name:</label>
-		<input placeholder="Smith" type="text" required="">
-		<br>
-		<!-- Gender: Male, Female, Other -->
-		<label for="Male">Male</label>
-		<input name="Gender" value="Male" id="Male" type="radio">
-		<label for="Female">Female</label>
-		<input name="Gender" value="Female" id="Female" type="radio">
-		<label for="Other">Other</label>
-		<input name="Gender" value="Other" id="Other" type="radio">
-		<br>
-		<!-- Email  -->
-		<label for="Username">Email:</label>
-		<input type="email" id="Username" placeholder="your email" required="">
-		<label for="Password">Password:</label>
-		<input type="password" id="Password" placeholder="your password" minlength="5" maxlength="10" required="">
-		<br>
-		<input type="submit">
-	</form>
-	
+    <h1>Register</h1>
+    <form action="">
+        <!-- First and Last Name -->
+        <label for="First Name">First Name:</label>
+        <input placeholder="John" type="text" required="">
+        <label for="Last Name">Last Name:</label>
+        <input placeholder="Smith" type="text" required="">
+        <br>
+        <!-- Gender: Male, Female, Other -->
+        <label for="Male">Male</label>
+        <input name="Gender" value="Male" id="Male" type="radio">
+        <label for="Female">Female</label>
+        <input name="Gender" value="Female" id="Female" type="radio">
+        <label for="Other">Other</label>
+        <input name="Gender" value="Other" id="Other" type="radio">
+        <br>
+        <!-- Email: Username and Password  -->
+        <label for="Username">Email:</label>
+        <input type="email" id="Username" placeholder="your email" required="">
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" placeholder="your password" minlength="5" maxlength="10" required="">
+        <br>
+        <!-- Birthday: Month, Day, Year -->
+        <label for="Birthday">Birthday:</label>
+        <select name="Birthday" id="">
+            <option value="Month">Month</option>
+        </select>
+        <select name="Birthday" id="">
+            <option value="Day">Day</option>
+        </select>
+        <select name="Birthday" id="">
+            <option value="Year">Year</option>
+        </select>
+        <br>
+        <input type="submit">
+    </form>
 </body>
+
 </html>
