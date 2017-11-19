@@ -11,40 +11,58 @@
     <form action="">
         <!-- First and Last Name -->
         <label for="First Name">First Name:</label>
-        <input placeholder="John" type="text" required="">
+        <input name="First Name" id="First name" placeholder="John" type="text" required="">
         <label for="Last Name">Last Name:</label>
-        <input placeholder="Smith" type="text" required="">
-        <br>
-        <!-- Gender: Male, Female, Other -->
-        <label for="Male">Male</label>
-        <input name="Gender" value="Male" id="Male" type="radio">
-        <label for="Female">Female</label>
-        <input name="Gender" value="Female" id="Female" type="radio">
-        <label for="Other">Other</label>
-        <input name="Gender" value="Other" id="Other" type="radio">
-        <br>
-        <!-- Email: Username and Password  -->
-        <!-- For password length, use: Pattern and required title -->
-        <label for="Username">Email:</label>
-        <input type="email" id="Username" placeholder="your email" required="">
-        <label for="Password">Password:</label>
-        <input type="password" id="Password" placeholder="your password" pattern=".{5,12}" required title="5 to 10 characters">
-        <br>
-        <!-- Birthday: Month, Day, Year -->
-        <label for="Birthday">Birthday:</label>
-        <select name="Birthday" id="">
-            <option value="Month">Month</option>
-        </select>
-        <select name="Birthday" id="">
-            <option value="Day">Day</option>
-        </select>
-        <select name="Birthday" id="">
-            <option value="Year">Year</option>
-        </select>
-        <br>
-        I agree to the terms and conditions
-        <input type="checkbox">
-        <br>
+        <input name="Last Name" id="Last Name" placeholder="Smith" type="text" required="">
+        <div>
+            <!-- Gender: Male, Female, Other -->
+            <label for="male">Male</label>
+            <input id="male" name="gender" value="male" type="radio">
+            <label for="female">Female</label>
+            <input id="female" name="gender" value="female" type="radio">
+            <label for="other">Other</label>
+            <input id="other" name="gender" value="other" type="radio">
+        </div>
+        <div>
+            <!-- Email: Username and Password  -->
+            <!-- For password length, use: Pattern and required title -->
+            <label>
+                Email:
+                <input type="email" name="email" placeholder="your email" required="">
+            </label>
+            <label>
+                Password:
+                <input type="password" name="password" placeholder="your password" pattern=".{5,12}" required title="5 to 10 characters">
+            </label>
+        </div>
+        <div>
+            <!-- Birthday: Month, Day, Year -->
+            <label>
+                Birthday:
+                <select name="month" id="">
+                    <option value="Month">Month</option>
+                    <option value="1">Jan</option>
+                    <option value="2">Feb</option>
+                    <option value="3">Mar</option>
+                </select>
+                <select name="day" id="">
+                    <option>Day</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                <select name="year" id="">
+                    <option value="Year">Year</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="agreed">I agree to the terms and conditions</label>
+            <input type="checkbox" id="agreed" name="agreed">
+        </div>
         <input type="submit">
     </form>
 </body>
